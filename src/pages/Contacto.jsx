@@ -1,8 +1,8 @@
-function Hombre(){
+function Contacto(){
     return(
         <>
         </>
     )
 }
 
-export default Hombre
+export default Contacto

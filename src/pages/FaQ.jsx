@@ -1,8 +1,8 @@
-function Hombre(){
+function FaQ(){
     return(
         <>
         </>
     )
 }
 
-export default Hombre
+export default FaQ

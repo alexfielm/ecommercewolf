@@ -1,6 +1,6 @@
 function Button() {
     return (
-        <button></button>
+        <button className="boton"></button>
     )
 }
 

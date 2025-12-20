@@ -1,8 +1,8 @@
-function Hombre(){
+function Oferta(){
     return(
         <>
         </>
     )
 }
 
-export default Hombre
+export default Oferta

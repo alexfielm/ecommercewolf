@@ -1,21 +1,21 @@
+import WolfWidget from './WolfWidget'
 import CartWidget from './CartWidget'
+import NavList from './NavList'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
     return (
         <nav className="navbar">
             <div className="nombreEmpresa">
-                <Link to='/'>The Wolf</Link>
+                <Link to='/'>
+                    <WolfWidget />
+                </Link>
             </div>
-            <ul className='navLinks'>
-                <li><Link to='/'>Hombre</Link></li>
-                <li><Link to='/'>Mujer</Link></li>
-                <li><Link to='/'>Preguntas frecuentes</Link></li>
-                <li><Link to-='/'>Contactanos</Link></li>
-                <li><Link to='/'>Ofertas</Link></li>
-            </ul>
+            <NavList/>
             <div className='cartWidget'>
-                <CartWidget />
+                <Link to='/carrito'>
+                    <CartWidget />
+                </Link>
             </div>
         </nav>
     )

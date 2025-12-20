@@ -13,6 +13,7 @@ import Mujer from './pages/Mujer'
 import FaQ from './pages/FaQ'
 import Contacto from './pages/Contacto'
 import Oferta from './pages/Oferta'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/Hombre' element={<Hombre/>}></Route>
-          <Route path='/Mujer' element={<Mujer />}></Route>
-          <Route path='/FaQ' element={<FaQ />}></Route>
-          <Route path='/Contacto' element={<Contacto />}></Route>
-          <Route path='/Oferta' element={<Oferta />}></Route>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Hombre' element={<Hombre/>}/>
+          <Route path='/Mujer' element={<Mujer/>}/>
+          <Route path='/FaQ' element={<FaQ/>}/>
+          <Route path='/Contacto' element={<Contacto/>}/>
+          <Route path='/Oferta' element={<Oferta/>}/>
+          <Route path='/Carrito' element={<Cart/>}/>
         </Routes>
       </main>
       <Footer />

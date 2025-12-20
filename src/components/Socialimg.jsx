@@ -1,9 +1,10 @@
-function Filter(){
+function Socialimg(){
     return(
         <div>
             
+
         </div>
     )
 }
 
-export default Filter
+export default Socialimg
