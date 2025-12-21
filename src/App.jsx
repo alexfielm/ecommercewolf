@@ -3,17 +3,17 @@ import React from 'react'
 import {Route, Routes} from 'react-router-dom'
 import './App.css'
 //import de componentes fijos
-import TopBar from './components/TopBar'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+import TopBar from './components/TopBar/TopBar'
+import NavBar from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer'
 //import de pages
-import Home from './pages/Home'
-import Hombre from './pages/Hombre'
-import Mujer from './pages/Mujer'
-import FaQ from './pages/FaQ'
-import Contacto from './pages/Contacto'
-import Oferta from './pages/Oferta'
-import Cart from './pages/Cart'
+import Home from './pages/Home/Home'
+import Hombre from './pages/Hombre/Hombre'
+import Mujer from './pages/Mujer/Mujer'
+import FaQ from './pages/FaQ/FaQ'
+import Contacto from './pages/Contacto/Contacto'
+import Oferta from './pages/Oferta/Oferta'
+import Cart from './pages/Cart/Cart'
 
 function App() {
   return (

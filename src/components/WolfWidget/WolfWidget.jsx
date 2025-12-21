@@ -1,4 +1,4 @@
-import cartIcon from '../assets/carrito.png'
+import cartIcon from '../../assets/carrito.png'
 
 function WolfWidget(){
     return(

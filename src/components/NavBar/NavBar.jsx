@@ -1,6 +1,6 @@
-import WolfWidget from './WolfWidget'
-import CartWidget from './CartWidget'
-import NavList from './NavList'
+import WolfWidget from '../WolfWidget/WolfWidget'
+import CartWidget from '../CartWidget/CartWidget'
+import NavList from '../NavList/NavList'
 import { Link } from 'react-router-dom'
 
 function NavBar() {

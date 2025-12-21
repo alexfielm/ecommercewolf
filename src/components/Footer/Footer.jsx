@@ -1,7 +1,7 @@
-import WolfWidget from '../components/WolfWidget'
-import NavList from './NavList'
-import Newsletter from './Newsletter'
-import Socialimg from './Socialimg'
+import WolfWidget from '../WolfWidget/WolfWidget'
+import NavList from '../NavList/NavList'
+import Newsletter from '../Newsletter/Newsletter'
+import Socialimg from '../Socialimg/Socialimg'
 
 function Footer() {
     return (

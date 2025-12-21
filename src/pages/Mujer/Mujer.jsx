@@ -1,5 +1,5 @@
-import Filter from '../components/Filter'
-import ProductContainer from '../components/ProductContainer'
+import Filter from '../../components/Filter/Filter'
+import ProductContainer from '../../components/ProductContainer/ProductContainer'
 
 function Mujer(){
     return(
