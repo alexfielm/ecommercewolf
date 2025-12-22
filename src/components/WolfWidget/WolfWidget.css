@@ -1,0 +1,15 @@
+.wolf-widget {
+    display: flex;
+    align-items: center;
+}
+
+.wolf-widget img {
+    width: 60px;
+    /* Slightly larger for logo */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.wolf-widget img:hover {
+    transform: scale(1.1);
+}

@@ -1,17 +1,19 @@
 import WolfWidget from '../WolfWidget/WolfWidget'
 import NavList from '../NavList/NavList'
-import Newsletter from '../Newsletter/Newsletter'
 import Socialimg from '../Socialimg/Socialimg'
+import { Link } from 'react-router-dom'
+import './Footer.css'
 
 function Footer() {
     return (
         <div className="footerContainer">
             <div className="footerImg">
-                <WolfWidget/>
-                <Socialimg/>
+                <Link to='/'>
+                    <WolfWidget />
+                </Link>
+                <Socialimg />
             </div>
-            <NavList/>
-            <Newsletter/>
+            <NavList className="footerNav" />
         </div>
     )
 }

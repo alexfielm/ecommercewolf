@@ -1,9 +1,8 @@
 //import de librerias y css
 import React from 'react'
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 //import de componentes fijos
-import TopBar from './components/TopBar/TopBar'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
 //import de pages
@@ -18,17 +17,16 @@ import Cart from './pages/Cart/Cart'
 function App() {
   return (
     <>
-      <TopBar />
       <NavBar />
       <main>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Hombre' element={<Hombre/>}/>
-          <Route path='/Mujer' element={<Mujer/>}/>
-          <Route path='/FaQ' element={<FaQ/>}/>
-          <Route path='/Contacto' element={<Contacto/>}/>
-          <Route path='/Oferta' element={<Oferta/>}/>
-          <Route path='/Carrito' element={<Cart/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/Hombre' element={<Hombre />} />
+          <Route path='/Mujer' element={<Mujer />} />
+          <Route path='/FaQ' element={<FaQ />} />
+          <Route path='/Contacto' element={<Contacto />} />
+          <Route path='/Oferta' element={<Oferta />} />
+          <Route path='/Carrito' element={<Cart />} />
         </Routes>
       </main>
       <Footer />

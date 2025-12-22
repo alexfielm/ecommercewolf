@@ -1,8 +1,9 @@
 import cartIcon from '../../assets/carrito.png'
+import './CartWidget.css'
 
 function CartWidget() {
     return (
-        <div>
+        <div className="cart-widget">
             <img src={cartIcon} alt="icono carrito" />
         </div>
     )

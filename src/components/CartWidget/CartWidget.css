@@ -1,0 +1,36 @@
+.cart-widget {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-widget img {
+    width: 35px;
+    /* Standard icon size */
+    height: auto;
+    filter: invert(93%) sepia(5%) saturate(100%) hue-rotate(180deg) brightness(105%) contrast(90%);
+    /* Light gray */
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+/* Make it white/accent on hover if needed, or just relying on navbar hover styles */
+.cart-widget img:hover {
+    transform: scale(1.1);
+    filter: invert(53%) sepia(35%) saturate(3065%) hue-rotate(235deg) brightness(98%) contrast(96%);
+    /* Accent #8B5CF6 approx */
+}
+
+.cartWidget {
+    display: flex;
+    align-items: center;
+}
+
+.cartWidget a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cartWidget a:hover {
+    color: var(--accent-color);
+}

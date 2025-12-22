@@ -1,0 +1,9 @@
+Paleta de colores:
+Primary Color: #374053
+Secondary Color: #9aa8c6
+Accent Color: #4b66a0
+
+Paleta de colores modo oscuro:
+Primary Color: #acb5c8
+Secondary Color: #394765
+Accent Color: #5f7ab4

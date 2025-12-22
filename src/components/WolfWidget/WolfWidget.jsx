@@ -1,9 +1,10 @@
-import cartIcon from '../../assets/carrito.png'
+import logo from '../../assets/react.svg'
+import './WolfWidget.css'
 
-function WolfWidget(){
-    return(
-        <div>
-            <img src={cartIcon} alt="icono carrito" />
+function WolfWidget() {
+    return (
+        <div className="wolf-widget">
+            <img src={logo} alt="Wolf Logo" />
         </div>
     )
 }

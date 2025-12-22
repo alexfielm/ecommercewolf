@@ -1,0 +1,28 @@
+.promocion-card {
+    flex: 1;
+    width: 33.33%;
+    /* Fallback/explicit width base */
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .promocion-card {
+        width: 100%;
+    }
+}
+
+.promocion-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 300px;
+    /* Ensure a decent height so it matches reference visual weight */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.promocion-card:hover .promocion-img {
+    transform: scale(1.05);
+}

@@ -1,0 +1,25 @@
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    /* Pill shape */
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    /* Bold */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #333333;
+    /* Slightly lighter on hover */
+    transform: scale(1.02);
+}
+
+.button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,13 @@
+.itemList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure images inside the grid scale down to fit the column */
+.itemList img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

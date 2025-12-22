@@ -1,6 +1,10 @@
+import './TopBar.css'
+
 function TopBar() {
     return (
-        <div></div>
+        <div className="topBar">
+            <p>Envios a todo el país</p>
+        </div>
     )
 }
 

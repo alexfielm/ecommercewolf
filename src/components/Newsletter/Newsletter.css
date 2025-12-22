@@ -1,0 +1,64 @@
+.newsletter-section {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.newsletter-desc {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.newsletter-input:focus {
+    border-color: #000000;
+}
+
+/* Removed disclaimer styles */
+
+.newsletter-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center the pill button */
+}
+
+/* Removed specific button override to scale back to default pill shape */

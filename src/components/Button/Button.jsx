@@ -1,6 +1,10 @@
-function Button() {
+import './Button.css'
+
+function Button(props) {
     return (
-        <button className="boton"></button>
+        <button className={`button ${props.className || ''}`}>
+            {props.texto}
+        </button>
     )
 }
 
