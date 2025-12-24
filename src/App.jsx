@@ -10,7 +10,6 @@ import Home from './pages/Home/Home'
 import Hombre from './pages/Hombre/Hombre'
 import Mujer from './pages/Mujer/Mujer'
 import FaQ from './pages/FaQ/FaQ'
-import Contacto from './pages/Contacto/Contacto'
 import Oferta from './pages/Oferta/Oferta'
 import Cart from './pages/Cart/Cart'
 
@@ -24,7 +23,6 @@ function App() {
           <Route path='/Hombre' element={<Hombre />} />
           <Route path='/Mujer' element={<Mujer />} />
           <Route path='/FaQ' element={<FaQ />} />
-          <Route path='/Contacto' element={<Contacto />} />
           <Route path='/Oferta' element={<Oferta />} />
           <Route path='/Carrito' element={<Cart />} />
         </Routes>

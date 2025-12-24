@@ -8,7 +8,6 @@ function NavList(props) {
             <li><Link to='/mujer'>Mujer</Link></li>
             <li className='ofertasLink'><Link to='/oferta'>Ofertas</Link></li>
             <li><Link to='/faq'>Preguntas frecuentes</Link></li>
-            <li><Link to='/contacto'>Contactanos</Link></li>
         </ul>
     )
 }

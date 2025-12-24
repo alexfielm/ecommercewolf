@@ -1,10 +1,9 @@
-import logo from '../../assets/react.svg'
 import './WolfWidget.css'
 
-function WolfWidget() {
+function WolfWidget(props) {
     return (
         <div className="wolf-widget">
-            <img src={logo} alt="Wolf Logo" />
+            <img src={props.logo} alt="Wolf Logo" />
         </div>
     )
 }

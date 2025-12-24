@@ -1,0 +1,33 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.seccionProductos {
+    display: flex;
+    flex-direction: column;
+    /* Stack vertically: Filter on top, Products below */
+    align-items: flex-start;
+    /* Align content to the left */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .seccionProductos {
+        align-items: center;
+        /* Center on mobile if desired */
+    }
+}
+
+.mostrarMas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,45 @@
+.social-container ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+    /* Space between icons */
+}
+
+.social-container li {
+    display: flex;
+    align-items: center;
+}
+
+.social-container img {
+    width: 24px;
+    /* Small size */
+    height: 24px;
+    object-fit: contain;
+    /* filter: invert(1); Removed to keep original colors */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* Invert only the TikTok icon to make it white on dark background */
+.social-container img[alt="tiktokIcon"] {
+    filter: invert(1);
+}
+
+/* If the background is light, remove the filter: invert(1) or use specific icons */
+/* The reference image shows white icons on dark background. 
+   If appropriate, I will assume the icons are black by default and we need them white if the footer is dark.
+   However, let's stick to size first. I will comment out filter for now unless I know the context is dark. 
+   Wait, the uploaded image has a dark background. So the icons should probably be white.
+   But the user just said "socialimg.jsx", I don't know where it's used exactly (Footer?).
+   Let's check usage or just set size.
+   Actually, looking at the previous context, Socialimg might be in the footer.
+   The user uploaded an image showing a dark footer with white icons.
+   I will set the size to 24x24px.
+*/
+
+.social-container img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
