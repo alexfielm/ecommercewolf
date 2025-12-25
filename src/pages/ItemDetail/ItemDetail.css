@@ -1,0 +1,329 @@
+.itemDetail {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 60px;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.itemDetail-img {
+    flex: 1;
+}
+
+.itemDetail-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.itemDetail-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemDetail-info h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.price-container {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.price-tax {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.options-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.colors-container {
+    display: flex;
+    gap: 15px;
+}
+
+.color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.color-circle.selected {
+    outline: 1px solid #000;
+    outline-offset: 3px;
+}
+
+.color-circle.black {
+    background-color: #000;
+}
+
+.color-circle.gray {
+    background-color: #808080;
+}
+
+.color-circle.darkgray {
+    background-color: #444;
+}
+
+.color-circle.white {
+    background-color: #fff;
+}
+
+.color-circle.charcoal {
+    background-color: #36454F;
+}
+
+
+.sizes-container {
+    display: flex;
+    gap: 0;
+    border: 1px solid #ddd;
+    width: fit-content;
+}
+
+.size-box {
+    width: 80px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-right: 1px solid #ddd;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.size-box:last-child {
+    border-right: none;
+}
+
+.size-box.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.size-box.disabled {
+    background-color: #f5f5f5;
+    color: #bbb;
+    cursor: not-allowed;
+    position: relative;
+    overflow: hidden;
+}
+
+.size-box.disabled::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, transparent 48%, #ddd 49%, #ddd 51%, transparent 52%);
+}
+
+.size-guide-link {
+    font-size: 0.9rem;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.disclaimer a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.purchase-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+.itemDetail-info .purchase-actions button {
+    flex: 1;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: none;
+    /* Override possible generic button styles */
+}
+
+.shipping-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.shipping-info p {
+    margin: 5px 0;
+}
+
+/* Description Section */
+.itemDetail-description {
+    background-color: #fff;
+    padding: 60px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.description-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    gap: 60px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.description-left {
+    flex: 1;
+}
+
+.description-left h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description-left p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.material {
+    margin-top: 20px;
+}
+
+.description-left h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.care-list {
+    list-style: none;
+    padding: 0;
+}
+
+.care-list li {
+    font-size: 1rem;
+    color: #333;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.care-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+/* Size Table */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .itemDetail {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    color: #333;
+}
+
+/* Ensure Medidas content looks good inside modal */
+.modal-content .description-right {
+    padding: 10px;
+}

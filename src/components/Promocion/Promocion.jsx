@@ -1,9 +1,17 @@
 import './Promocion.css'
-import ropaEjemplo from '../../assets/ropaEjemplo.webp'
-function Promocion() {
+
+function Promocion({ props }) {
     return (
         <div className="promocion-card">
-            <img src={ropaEjemplo} alt="ropa Ejemplo" className="promocion-img" />
+            <img src={props.image} alt="Promocion" className="promocion-img" />
+            <div className="promocion-overlay">
+                <div className="promocion-text-top">
+                    <span>Remeras</span>
+                    <span className="separator"></span>
+                    <span>desde</span>
+                </div>
+                <div className="promocion-price">{props.price}</div>
+            </div>
         </div>
     )
 }

@@ -1,28 +1,65 @@
 .promocion-card {
     flex: 1;
-    width: 33.33%;
-    /* Fallback/explicit width base */
     position: relative;
+    aspect-ratio: 1 / 1;
+    /* Make it square */
     overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .promocion-card {
-        width: 100%;
-    }
+    cursor: pointer;
 }
 
 .promocion-img {
     width: 100%;
     height: 100%;
-    min-height: 400px;
-    max-height: 300px;
-    /* Ensure a decent height so it matches reference visual weight */
     object-fit: cover;
-    display: block;
     transition: transform 0.3s ease;
 }
 
 .promocion-card:hover .promocion-img {
     transform: scale(1.05);
+}
+
+.promocion-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffd1dc;
+    /* Light pinkish color from image */
+    pointer-events: none;
+    /* Let clicks pass through if needed */
+}
+
+.promocion-text-top {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    align-items: center;
+    /* Center vertically */
+}
+
+/* Optional vertical line if needed, image has visual separator but might be just space */
+/* .separator { width: 1px; height: 15px; background: currentColor; } */
+
+.promocion-price {
+    font-family: serif;
+    /* Use a serif font for elegance */
+    font-style: italic;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .promocion-card {
+        width: 100%;
+        /* In flex column this might be redundant but safe */
+        aspect-ratio: auto;
+        height: 300px;
+    }
 }

@@ -12,6 +12,7 @@ import Mujer from './pages/Mujer/Mujer'
 import FaQ from './pages/FaQ/FaQ'
 import Oferta from './pages/Oferta/Oferta'
 import Cart from './pages/Cart/Cart'
+import ItemDetail from './pages/ItemDetail/ItemDetail'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/FaQ' element={<FaQ />} />
           <Route path='/Oferta' element={<Oferta />} />
           <Route path='/Carrito' element={<Cart />} />
+          <Route path='/ItemDetail' element={<ItemDetail />} />
         </Routes>
       </main>
       <Footer />
