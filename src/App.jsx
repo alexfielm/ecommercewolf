@@ -15,6 +15,9 @@ import Cart from './pages/Cart/Cart'
 import ItemDetail from './pages/ItemDetail/ItemDetail'
 
 function App() {
+
+  const params = useParams()
+
   return (
     <>
       <NavBar />
@@ -26,7 +29,7 @@ function App() {
           <Route path='/FaQ' element={<FaQ />} />
           <Route path='/Oferta' element={<Oferta />} />
           <Route path='/Carrito' element={<Cart />} />
-          <Route path='/ItemDetail' element={<ItemDetail />} />
+          <Route path='/ItemDetail/:id' element={<ItemDetail />} />
         </Routes>
       </main>
       <Footer />

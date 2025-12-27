@@ -3,9 +3,30 @@ import Button from "../../components/Button/Button"
 import "./ItemDetail.css"
 import ropaEjemplo from "../../assets/ropaEjemplo.webp"
 import { useState } from "react"
+import { useParams } from 'react-router-dom'
 import Medidas from "../../components/Medidas/Medidas"
+import { initializeApp } from "firebase/app"
 
+import {app} from '../../database/firebaseConfig'
+import { getFirestore, collection } from 'firebase/firestore'
 function ItemDetail() {
+
+    function comprar(e){
+        e.preventDefault
+        //logueate a mi firebase
+        const app = initializeApp(firebaseConfig)
+        //extrae la base de datos
+        const db = getFirestore(app)
+        //referencio a una coleccion
+        const productCollection = collection(db, "nombreColeccion")
+        //hago la consulta o el CRUD (create, read, update, delete)
+        
+
+
+    }
+
+    const params = useParams
+
     const [showModal, setShowModal] = useState(false);
 
     const openModal = (e) => {
