@@ -1,5 +1,5 @@
 //import de componentes
-import Carousel from '../../components/Carousel/Carousel'
+//import Carousel from '../../components/Carousel/Carousel'
 import SeccionPromociones from '../../components/SeccionPromociones/SeccionPromociones'
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer'
 import Newsletter from '../../components/Newsletter/Newsletter'
@@ -8,9 +8,9 @@ import './Home.css'
 function Home() {
     return (
         <>
-            <section className="seccionCarousel">
+            {/*<section className="seccionCarousel">
                 <Carousel />
-            </section>
+            </section>*/}
             <section className="seccionPromociones">
                 <SeccionPromociones />
             </section>

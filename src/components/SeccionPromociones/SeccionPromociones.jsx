@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom'
 import './SeccionPromociones.css'
 import Promocion from '../Promocion/Promocion'
-import ropaEjemplo from '../../assets/ropaEjemplo.webp'
+import remeraFiguritasNegro from "../../assets/remeraFiguritas/remeraFiguritasNegro.jpg";
+import sueterLanillaNegro from "../../assets/sueterLanilla/sueterLanillaNegro.jpg";
+import peluche from "../../assets/peluche/peluche.jpg";
 
 function SeccionPromociones() {
     return (
         <div className="seccion-promociones-container">
-            <Promocion props={{ price: "$70.000", image: ropaEjemplo }} />
-            <Promocion props={{ price: "$100.000", image: ropaEjemplo }} />
-            <Promocion props={{ price: "$150.000", image: ropaEjemplo }} />
-            <Promocion props={{ price: "$200.000", image: ropaEjemplo }} />
+            <Link to="/Oferta"><Promocion props={{ price: "$6.000", category: "Remeras", image: remeraFiguritasNegro }} /></Link>
+            <Link to="/Oferta"><Promocion props={{ price: "$9.000", category: "Sueters", image: sueterLanillaNegro }} /></Link>
+            <Link to="/Oferta"><Promocion props={{ price: "$10.000", category: "Peluche", image: peluche }} /></Link>
         </div>
     )
 }

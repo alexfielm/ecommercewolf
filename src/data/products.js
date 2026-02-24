@@ -79,7 +79,7 @@ const products = [
         title: "Peluche",
         price: 6000,
         description: "Peluche de algodon premium",
-        category: "Accesorios",
+        category: "Invierno",
         image: peluche,
     },
     {

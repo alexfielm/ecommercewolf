@@ -5,20 +5,14 @@ import ropaEjemplo from "../../assets/ropaEjemplo.webp"
 import { useState } from "react"
 import { useParams } from 'react-router-dom'
 import Medidas from "../../components/Medidas/Medidas"
+import products from "../../data/products"
 
 function ItemDetail() {
 
 
     const { id } = useParams();
 
-    const product = {
-        id: Number(id) || 1,
-        title: `Producto ${id || 1}`,
-        price: 15000,
-        description:
-            "Descripción detallada del producto. Muy cómodo y con un ajuste perfecto.",
-        image: ropaEjemplo,
-    };
+    const product = products.find(p => p.id === Number(id));
 
     const [showModal, setShowModal] = useState(false);
 

@@ -1,5 +1,3 @@
-import Filter from '../../components/Filter/Filter'
-import Button from '../../components/Button/Button'
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer'
 import './Invierno.css'
 
@@ -10,11 +8,7 @@ function Invierno() {
                 <h1>Coleccion Invierno</h1>
             </div>
             <div className='seccionProductos'>
-                <Filter />
-                <ItemListContainer />
-            </div>
-            <div className='mostrarMas'>
-                <Button texto="Mostrar mas" />
+                <ItemListContainer category="Invierno" />
             </div>
         </section>
     )

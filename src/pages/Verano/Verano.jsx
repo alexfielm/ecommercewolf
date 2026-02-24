@@ -1,6 +1,3 @@
-//import de pages
-import Filter from '../../components/Filter/Filter'
-import Button from '../../components/Button/Button'
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer'
 import './Verano.css'
 
@@ -11,11 +8,7 @@ function Verano() {
                 <h1>Coleccion Verano</h1>
             </div>
             <div className='seccionProductos'>
-                <Filter />
-                <ItemListContainer />
-            </div>
-            <div className='mostrarMas'>
-                <Button texto="Mostrar mas" />
+                <ItemListContainer category="Verano" />
             </div>
         </section>
     )
