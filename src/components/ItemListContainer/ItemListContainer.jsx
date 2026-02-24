@@ -1,15 +1,14 @@
 import Item from '../Item/Item'
-
 import './ItemListContainer.css'
+import products from '../../data/products'
 
 function ItemListContainer() {
     return (
         <div>
             <div className='itemList'>
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                {products.map((product) => (
+                    <Item key={product.id} id={product.id} title={product.title} price={product.price} image={product.image} />
+                ))}
             </div>
         </div>
     )

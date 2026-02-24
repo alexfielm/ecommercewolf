@@ -2,13 +2,13 @@
 import Filter from '../../components/Filter/Filter'
 import Button from '../../components/Button/Button'
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer'
-import './Hombre.css'
+import './Verano.css'
 
-function Hombre() {
+function Verano() {
     return (
         <section>
             <div className='titulo'>
-                <h1>Coleccion Hombre</h1>
+                <h1>Coleccion Verano</h1>
             </div>
             <div className='seccionProductos'>
                 <Filter />
@@ -21,4 +21,4 @@ function Hombre() {
     )
 }
 
-export default Hombre
+export default Verano

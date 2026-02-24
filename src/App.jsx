@@ -7,8 +7,8 @@ import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
 //import de pages
 import Home from './pages/Home/Home'
-import Hombre from './pages/Hombre/Hombre'
-import Mujer from './pages/Mujer/Mujer'
+import Verano from './pages/Verano/Verano'
+import Invierno from './pages/Invierno/Invierno'
 import FaQ from './pages/FaQ/FaQ'
 import Oferta from './pages/Oferta/Oferta'
 import Cart from './pages/Cart/Cart'
@@ -24,8 +24,8 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Hombre' element={<Hombre />} />
-          <Route path='/Mujer' element={<Mujer />} />
+          <Route path='/Verano' element={<Verano />} />
+          <Route path='/Invierno' element={<Invierno />} />
           <Route path='/FaQ' element={<FaQ />} />
           <Route path='/Oferta' element={<Oferta />} />
           <Route path='/Carrito' element={<Cart />} />
