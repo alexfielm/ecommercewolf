@@ -38,5 +38,5 @@ Permite a un componente decidir qué elemento debe renderizar basándose en cond
 - Operador Lógico AND (`&&`): En el caso del `ItemDetail.jsx`, la UI del modal (`<div className="modal-overlay">`) solo se despliega y renderiza en pantalla cuando `showModal && (...)` es verdadero.
 
 --------------------------------------------------------------
-Este proyecto sirvió no solo para practicar el maquetado (HTML/CSS adaptado para JSX), sino para dominar el enrutado, los hooks de efectos de interfaz visuales y la creación de una arquitectura SPA moderna en React.
+Este proyecto sirvió no solo para practicar el maquetado (HTML/CSS adaptado para JSX), sino para dominar el enrutado, los hooks de efectos de interfaz visuales y la creación de una arquitectura SPA moderna en React. Link de la web: https://ecommercethewolf.vercel.app
 ==============================================================
