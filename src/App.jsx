@@ -16,7 +16,7 @@ import ItemDetail from './pages/ItemDetail/ItemDetail'
 
 function App() {
 
-  const params = useParams()
+  /*const params = useParams()*/
 
   return (
     <>

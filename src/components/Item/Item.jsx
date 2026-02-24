@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import './Item.css'
 
-function Item() {
+function Item({ id, title, price, image }) {
     return (
         <article className="item">
-            <Link to="/ItemDetail" style={{ textDecoration: 'none', color: 'inherit' }}>
-                <ItemDetailContainer nombreArticulo="Remera Ejemplo" precioArticulo="$1000" />
+            <Link to={`/ItemDetail/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <ItemDetailContainer title={title} price={price} image={image} />
             </Link>
         </article>
     )

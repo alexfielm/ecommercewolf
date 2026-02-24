@@ -5,27 +5,20 @@ import ropaEjemplo from "../../assets/ropaEjemplo.webp"
 import { useState } from "react"
 import { useParams } from 'react-router-dom'
 import Medidas from "../../components/Medidas/Medidas"
-import { initializeApp } from "firebase/app"
 
-import {app} from '../../database/firebaseConfig'
-import { getFirestore, collection } from 'firebase/firestore'
 function ItemDetail() {
 
-    function comprar(e){
-        e.preventDefault
-        //logueate a mi firebase
-        const app = initializeApp(firebaseConfig)
-        //extrae la base de datos
-        const db = getFirestore(app)
-        //referencio a una coleccion
-        const productCollection = collection(db, "nombreColeccion")
-        //hago la consulta o el CRUD (create, read, update, delete)
-        
 
+    const { id } = useParams();
 
-    }
-
-    const params = useParams
+    const product = {
+        id: Number(id) || 1,
+        title: `Producto ${id || 1}`,
+        price: 15000,
+        description:
+            "Descripción detallada del producto. Muy cómodo y con un ajuste perfecto.",
+        image: ropaEjemplo,
+    };
 
     const [showModal, setShowModal] = useState(false);
 
@@ -38,17 +31,21 @@ function ItemDetail() {
         setShowModal(false);
     };
 
+    if (!product) {
+        return <div className="loading">Cargando...</div>
+    }
+
     return (
         <>
             <section className="itemDetail">
                 <div className="itemDetail-img">
-                    <img src={ropaEjemplo} alt="Product" />
+                    <img src={product.image || ropaEjemplo} alt={product.title} />
                 </div>
                 <div className="itemDetail-info">
-                    <h1>Sweater casual smoth de algodón</h1>
+                    <h1>{product.title}</h1>
                     <div className="price-container">
-                        <p className="price">$ 195.000</p>
-                        <p className="price-tax">$ 161.157,02 Precio sin imp. nacionales</p>
+                        <p className="price">$ {product.price}</p>
+                        <p className="price-tax">Precio sin imp. nacionales</p>
                     </div>
 
                     <div className="options-group">
@@ -93,8 +90,8 @@ function ItemDetail() {
             <section className="itemDetail-description">
                 <div className="description-content">
                     <div className="description-left">
-                        <h2>Remera The wolf</h2>
-                        <p>Remera The wolf raglan oversize fit, con recortes curvos, cuello redondo en ribb y terminación al corte que le dan un estilo relajado.</p>
+                        <h2>{product.title}</h2>
+                        <p>{product.description}</p>
                         <p>Mas descripcion de la prenda</p>
                         <p>El modelo mide 1.88 y usa talle S</p>
                         <p className="material"><strong>100% Algodón Premium</strong></p>
